@@ -7,39 +7,16 @@
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
-  color: #000;
-  background: #fff;
-  /**************************************/
-  /************* kv styles **************/
-  /**************************************/
-  /**************************************/
-  /********** benefits styles ***********/
-  /**************************************/
-  /**************************************/
-  /********** features styles ***********/
-  /**************************************/
-  /**************************************/
-  /************ tech styles *************/
-  /**************************************/
-  /**************************************/
-  /********** colors styles *************/
-  /**************************************/
-  /**************************************/
-  /************ video styles ************/
-  /**************************************/
-  /**************************************/
-  /******* cross sell styles ************/
-  /**************************************/
-  /**************************************/
-  /******* cross sell styles ************/
-  /**************************************/
-  /**************************************/
-  /*********** footer styles ************/
-  /**************************************/
+  color: #000000;
+  background: #ffffff;
+}
+#es-rc #es-rc-content ::-moz-selection {
+  background-color: #c28860;
+  color: #ffffff;
 }
 #es-rc #es-rc-content ::selection {
-  background-color: #C28860;
-  color: #FFF;
+  background-color: #c28860;
+  color: #ffffff;
 }
 #es-rc #es-rc-content * {
   box-sizing: border-box;
@@ -64,23 +41,31 @@
   font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
 }
+#es-rc #es-rc-content {
+  /**************************************/
+  /************* kv styles **************/
+  /**************************************/
+}
 #es-rc #es-rc-content .es-kv {
-  background-color: #C0ACC7;
-  color: #FFFFFF;
+  background-color: #c0acc7;
+  color: #ffffff;
 }
 #es-rc #es-rc-content .es-kv__headline {
   text-transform: uppercase;
   font-family: "Barlow Condensed", sans-serif;
-  text-align: center;
   padding-block: 16px;
+  line-height: 0.9;
+  padding: 16px;
 }
 #es-rc #es-rc-content .es-kv__headline--top {
   font-weight: 600;
   font-size: 50px;
+  margin-block: 0;
 }
 #es-rc #es-rc-content .es-kv__headline--bottom {
   font-weight: 400;
   font-size: 70px;
+  margin-block: 0;
 }
 @media (min-width: 500px) {
   #es-rc #es-rc-content .es-kv {
@@ -88,7 +73,7 @@
   }
   #es-rc #es-rc-content .es-kv__headline {
     position: absolute;
-    top: 3%;
+    top: 6%;
     right: 0;
     padding-inline: 32px;
     text-align: right;
@@ -102,33 +87,32 @@
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content .es-kv__headline {
-    bottom: 19%;
-    left: 30%;
+    bottom: 7%;
+    left: 4%;
     right: unset;
     top: unset;
     padding: 0;
     line-height: 0.8;
+    text-align: left;
+  }
+  #es-rc #es-rc-content .es-kv__headline--top {
+    font-size: 26px;
+  }
+  #es-rc #es-rc-content .es-kv__headline--bottom {
+    font-size: 40px;
   }
   #es-rc #es-rc-content .es-kv__packshot {
     position: absolute;
     transform: translate(0%, -50%);
-    right: 6%;
-    top: 47%;
-    width: 24%;
+    right: 3%;
+    top: 51%;
+    width: 43%;
   }
   #es-rc #es-rc-content .es-kv__packshot img {
     margin: unset;
   }
 }
-@media (min-width: 645px) {
-  #es-rc #es-rc-content .es-kv__headline {
-    left: 35%;
-  }
-}
 @media (min-width: 780px) {
-  #es-rc #es-rc-content .es-kv__headline {
-    left: 36%;
-  }
   #es-rc #es-rc-content .es-kv__headline--top {
     font-size: 46px;
   }
@@ -136,17 +120,25 @@
     font-size: 60px;
   }
 }
-@media (min-width: 880px) {
-  #es-rc #es-rc-content .es-kv__headline {
-    left: 40%;
+@media (min-width: 900px) {
+  #es-rc #es-rc-content .es-kv__headline--top {
+    font-size: 48px;
+  }
+  #es-rc #es-rc-content .es-kv__headline--bottom {
+    font-size: 78px;
   }
 }
+#es-rc #es-rc-content {
+  /**************************************/
+  /********** benefits styles ***********/
+  /**************************************/
+}
 #es-rc #es-rc-content .es-benefits__wrapper {
-  background-color: #C0ACC7;
+  background-color: #c0acc7;
   padding: 16px;
 }
 #es-rc #es-rc-content .es-benefits__headline {
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 32px;
   line-height: 0.9;
@@ -169,7 +161,7 @@
 #es-rc #es-rc-content .es-benefits__single {
   display: flex;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
   gap: 8px;
   transition: all 200ms ease-in-out;
 }
@@ -187,7 +179,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 75%;
+  width: 60%;
   transition: all 200ms ease-in-out;
 }
 #es-rc #es-rc-content .es-benefits__packs:hover {
@@ -206,34 +198,80 @@
     padding: 0;
   }
 }
-@media (min-width: 576px) {
+@media (min-width: 500px) {
+  #es-rc #es-rc-content .es-benefits__headline {
+    margin-bottom: 4px;
+  }
   #es-rc #es-rc-content .es-benefits__headline--top {
-    font-size: 38px;
+    font-size: 24px;
   }
   #es-rc #es-rc-content .es-benefits__headline--bottom {
-    font-size: 70px;
+    font-size: 40px;
+  }
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content .es-benefits__headline {
+    margin-bottom: 14px;
+  }
+  #es-rc #es-rc-content .es-benefits__headline--top {
+    font-size: 26px;
+  }
+  #es-rc #es-rc-content .es-benefits__headline--bottom {
+    font-size: 44px;
   }
   #es-rc #es-rc-content .es-benefits__flexwrapper {
-    max-width: 60%;
+    max-width: 80%;
+  }
+  #es-rc #es-rc-content .es-benefits__single {
+    font-size: 15px;
+  }
+}
+@media (min-width: 780px) {
+  #es-rc #es-rc-content .es-benefits__headline {
+    margin-bottom: 24px;
+  }
+  #es-rc #es-rc-content .es-benefits__headline--top {
+    font-size: 36px;
+  }
+  #es-rc #es-rc-content .es-benefits__headline--bottom {
+    font-size: 60px;
   }
   #es-rc #es-rc-content .es-benefits__single {
     font-size: 18px;
+  }
+  #es-rc #es-rc-content .es-benefits__packs {
+    bottom: -12%;
+    width: 67%;
   }
 }
 @media (min-width: 900px) {
   #es-rc #es-rc-content .es-benefits__wrapper {
     top: 20%;
-    left: 10%;
+    left: 7%;
+  }
+  #es-rc #es-rc-content .es-benefits__headline {
+    margin-bottom: 32px;
+  }
+  #es-rc #es-rc-content .es-benefits__headline--top {
+    font-size: 48px;
+  }
+  #es-rc #es-rc-content .es-benefits__headline--bottom {
+    font-size: 80px;
   }
   #es-rc #es-rc-content .es-benefits__single {
-    font-size: 20px;
+    font-size: 25px;
   }
   #es-rc #es-rc-content .es-benefits__single img {
     width: 20px;
   }
 }
+#es-rc #es-rc-content {
+  /**************************************/
+  /********** features styles ***********/
+  /**************************************/
+}
 #es-rc #es-rc-content .es-features {
-  background-color: #C0ACC7;
+  background-color: #c0acc7;
 }
 #es-rc #es-rc-content .es-features__icons {
   display: flex;
@@ -274,8 +312,13 @@
     flex-basis: 50%;
   }
 }
+#es-rc #es-rc-content {
+  /**************************************/
+  /************ tech styles *************/
+  /**************************************/
+}
 #es-rc #es-rc-content .es-tech {
-  background-color: #E8E1E9;
+  background-color: #e8e1e9;
 }
 #es-rc #es-rc-content .es-tech__bg-mobile img {
   width: 100%;
@@ -314,7 +357,8 @@
     width: 100%;
   }
   #es-rc #es-rc-content .es-tech__bg-desktop img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 100%;
     width: 100%;
   }
@@ -336,10 +380,15 @@
     padding-inline: 32px;
   }
 }
+#es-rc #es-rc-content {
+  /**************************************/
+  /********** colors styles *************/
+  /**************************************/
+}
 #es-rc #es-rc-content .es-colors {
   text-transform: uppercase;
   padding-block: 48px;
-  background-color: #E8E1E9;
+  background-color: #e8e1e9;
 }
 #es-rc #es-rc-content .es-colors__header {
   text-align: center;
@@ -385,9 +434,14 @@
   font-weight: 700;
   font-size: 20px;
 }
+#es-rc #es-rc-content {
+  /**************************************/
+  /************ video styles ************/
+  /**************************************/
+}
 #es-rc #es-rc-content .es-video {
   padding: 32px;
-  background-color: #C0ACC7;
+  background-color: #c0acc7;
 }
 #es-rc #es-rc-content .es-video__video {
   max-width: 100%;
@@ -397,9 +451,14 @@
     padding: 64px;
   }
 }
+#es-rc #es-rc-content {
+  /**************************************/
+  /******* cross sell styles ************/
+  /**************************************/
+}
 #es-rc #es-rc-content .es-cross {
   padding: 60px 16px;
-  background-color: #E8E1E9;
+  background-color: #e8e1e9;
 }
 #es-rc #es-rc-content .es-cross__header {
   text-align: center;
@@ -425,7 +484,7 @@
   transform: scale(1.05);
 }
 #es-rc #es-rc-content .es-cross__single:hover .es-cross__link {
-  background-color: #FFF;
+  background-color: #fff;
   color: #000;
   box-shadow: inset 0 0 0 2px #000;
 }
@@ -457,7 +516,7 @@
   line-height: inherit;
   font-size: 20px;
   background: #000000;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
   padding: 16px 40px;
   font-weight: 700;
@@ -487,15 +546,23 @@
     height: 7em;
   }
 }
+#es-rc #es-rc-content {
+  /**************************************/
+  /******* cross sell styles ************/
+  /**************************************/
+}
 #es-rc #es-rc-content .es-disclaimer {
   padding: 20px 16px;
-  background-color: #E8E1E9;
+  background-color: #e8e1e9;
   text-align: center;
   font-size: 13px;
+}
+#es-rc #es-rc-content {
+  /**************************************/
+  /*********** footer styles ************/
+  /**************************************/
 }
 #es-rc #es-rc-content .es-footer {
   background-color: #000000;
   padding: 24px;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
