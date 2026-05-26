@@ -8,6 +8,12 @@ $color-accent: #c28860;
 $color-black: #000000;
 $color-white: #ffffff;
 
+@mixin reduced-motion {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+  }
+}
+
 #es-rc #es-rc-content {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -205,6 +211,9 @@ $color-white: #ffffff;
 
       &:hover {
         margin-left: 20px;
+        @include reduced-motion {
+          margin-left: 0;
+        }
       }
 
       img {
@@ -226,6 +235,9 @@ $color-white: #ffffff;
 
       &:hover {
         scale: 1.1;
+        @include reduced-motion {
+          scale: 1;
+        }
       }
     }
   }
@@ -350,6 +362,9 @@ $color-white: #ffffff;
 
       &:hover {
         scale: 1.1;
+        @include reduced-motion {
+          scale: 1;
+        }
       }
     }
 
@@ -362,6 +377,9 @@ $color-white: #ffffff;
 
       img:hover {
         scale: 1.2;
+        @include reduced-motion {
+          scale: 1;
+        }
       }
     }
   }
@@ -523,6 +541,9 @@ $color-white: #ffffff;
 
     &__single:hover .es-colors__imgContainer .es-colors__prod {
       scale: 1.1;
+      @include reduced-motion {
+        scale: 1;
+      }
     }
 
     &__single--text {
@@ -587,6 +608,9 @@ $color-white: #ffffff;
     &__single:hover {
       .es-cross__img {
         transform: scale(1.05);
+        @include reduced-motion {
+          scale: 1;
+        }
       }
 
       .es-cross__link {
