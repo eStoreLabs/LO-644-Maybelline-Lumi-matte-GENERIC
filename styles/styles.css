@@ -391,6 +391,17 @@
   font-weight: 700;
   font-size: 20px;
 }
+@media (min-width: 990px) {
+  #es-rc #es-rc-content .es-colors__wrapper {
+    max-width: unset;
+    justify-content: left;
+    gap: 0;
+    padding-left: 12px;
+  }
+  #es-rc #es-rc-content .es-colors__single {
+    width: 155px;
+  }
+}
 #es-rc #es-rc-content {
   /**************************************/
   /******* disclaimer styles ************/

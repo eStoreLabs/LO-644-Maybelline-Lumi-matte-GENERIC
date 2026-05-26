@@ -474,6 +474,20 @@ $color-white: #ffffff;
     }
   }
 
+  @media (min-width: 990px) {
+    .es-colors {
+      &__wrapper {
+        max-width: unset;
+        justify-content: left;
+        gap: 0;
+        padding-left: 12px;
+      }
+      &__single {
+        width: 155px;
+      }
+    }
+  }
+
   /**************************************/
   /******* disclaimer styles ************/
   /**************************************/
